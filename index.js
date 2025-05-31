@@ -2,6 +2,9 @@
 const express = require("express");
 const app = express();
 
+//assign port value
+const port = process.env.PORT || 8020;
+
 //importing cors and allowing all requests
 const cors = require("cors");
 app.use(cors);
@@ -29,9 +32,6 @@ env.config();
 //import routes here
 
 //import middlewares here (requestLogger, responseLogger, errorHandler)
-
-//assign port value
-const port = process.env.PORT || 8020;
 
 //Home route setup
 app.get("/", (req, res) => {
