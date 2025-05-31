@@ -4,6 +4,7 @@ const app = express();
 
 //assign port value
 const port = process.env.PORT || 8020;
+const host = process.env.HOSTNAME;
 
 //importing cors and allowing all requests
 const cors = require("cors");
@@ -48,7 +49,7 @@ app.use("/food", foodRoutes);
 //Add errorHandler middleware if needed
 
 //running server on the selected port
-app.listen(port, () => {
+app.listen(port, host, () => {
   console.log(`Listening on port ${port}`);
 
   //connecting to database
