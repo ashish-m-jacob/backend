@@ -8,7 +8,7 @@ app.use(
   cors({
     origin: "*",
     headers: "content-type",
-    methods: "POST",
+    methods: "POST, GET",
     exposeHeaders:
       "access-control-allow-origin,access-control-allow-methods,access-control-allow-headers",
   })
