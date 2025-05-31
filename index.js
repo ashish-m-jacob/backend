@@ -1,6 +1,9 @@
 //importing and using express
 const express = require("express");
 const app = express();
+//importing and configuring dotenv
+const env = require("dotenv");
+env.config();
 
 //assign port value
 const port = process.env.PORT || 8020;
@@ -20,18 +23,12 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.json()); // To parse JSON request
 app.use(bodyParser.urlencoded({ extended: true })); //To parse form data
 
+//import routes here
 //importing customerRoutes
 const customerRoutes = require("./routes/customer");
 
 //importing food routes
 const foodRoutes = require("./routes/food");
-
-//importing and configuring dotenv
-const env = require("dotenv");
-env.config();
-
-//import routes here
-
 //import middlewares here (requestLogger, responseLogger, errorHandler)
 
 //Home route setup
