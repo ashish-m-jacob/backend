@@ -4,15 +4,7 @@ const app = express();
 
 //importing cors and allowing all requests
 const cors = require("cors");
-app.use(
-  cors({
-    origin: "*",
-    headers: "content-type",
-    methods: ["POST", "GET"],
-    exposeHeaders:
-      "access-control-allow-origin,access-control-allow-methods,access-control-allow-headers",
-  })
-);
+app.use();
 
 //importing mongoose
 const mongoose = require("mongoose");
