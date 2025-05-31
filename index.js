@@ -4,7 +4,7 @@ const app = express();
 
 //importing cors and allowing all requests
 const cors = require("cors");
-app.use();
+app.use(cors);
 
 //importing mongoose
 const mongoose = require("mongoose");
