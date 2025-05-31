@@ -31,7 +31,7 @@ env.config();
 //import middlewares here (requestLogger, responseLogger, errorHandler)
 
 //assign port value
-const port = process.env.PORT || 9090;
+const port = process.env.PORT || 8000;
 
 //Home route setup
 app.get("/", (req, res) => {
