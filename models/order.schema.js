@@ -7,7 +7,7 @@ const orderSchema = new mongoose.Schema({
   phone: { type: String, required: true },
   address: { type: String },
   orderItems: { type: [String], required: true },
-  orderQuantity: { type: [String], required: true },
+  orderQuantity: { type: [Number], required: true },
   itemTotal: { type: Number, required: true },
   deliveryCharge: { type: Number },
   taxes: { type: Number, required: true },
